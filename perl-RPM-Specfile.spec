@@ -1,13 +1,14 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	RPM
 %define	pnam	Specfile
 Summary:	RPM::Specfile - Perl extension for creating RPM Specfiles
 Summary(pl):	RPM::Specfile - rozszerzenie Perla do tworzenia plików spec dla RPM-a
 Name:		perl-%{pdir}-%{pnam}
-Version:	1.09
+Version:	1.11
 Release:	1
 License:	?
 Group:		Development/Languages/Perl
@@ -33,6 +34,7 @@ znale¼æ w za³±czonym skrypcie cpanflute2 - dokumentacja wkrótce.
 %build
 perl Makefile.PL
 %{__make}
+
 %{!?_without_tests:%{__make} test}
 
 %install
