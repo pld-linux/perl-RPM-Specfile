@@ -7,8 +7,8 @@
 Summary:	RPM::Specfile - Perl extension for creating RPM Specfiles
 Summary(pl):	RPM::Specfile - rozszerzenie Perla do tworzenia plików spec dla RPM-a
 Name:		perl-%{pdir}-%{pnam}
-Version:	1.08
-Release:	2
+Version:	1.09
+Release:	1
 License:	?
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -37,8 +37,11 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
+mv $RPM_BUILD_ROOT%{_bindir}/cpanflute2 $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -47,3 +50,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{perl_sitelib}/%{pdir}/*.pm
 %{_mandir}/man3/*
+%dir %{_examplesdir}/%{name}-%{version}
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*
