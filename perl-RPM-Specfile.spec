@@ -7,7 +7,7 @@
 %define	pnam	Specfile
 Summary:	RPM::Specfile - Perl extension for creating RPM specfiles
 Summary(pl):	RPM::Specfile - rozszerzenie Perla do tworzenia plików .spec dla RPM-a
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-RPM-Specfile
 Version:	1.17
 Release:	2
 License:	?
