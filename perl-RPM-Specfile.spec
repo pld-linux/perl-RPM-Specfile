@@ -34,7 +34,7 @@ znale¼æ w za³±czonym skrypcie cpanflute2 - dokumentacja wkrótce.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}
