@@ -8,12 +8,12 @@
 Summary:	RPM::Specfile - Perl extension for creating RPM specfiles
 Summary(pl):	RPM::Specfile - rozszerzenie Perla do tworzenia plików .spec dla RPM-a
 Name:		perl-RPM-Specfile
-Version:	1.17
-Release:	2
+Version:	1.19
+Release:	1
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	84e35c834944ef170fb7555304460516
+# Source0-md5:	55e05321f3c436a8493352b1a8541e5c
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
