@@ -6,7 +6,7 @@
 %define		pdir	RPM
 %define		pnam	Specfile
 Summary:	RPM::Specfile - Perl extension for creating RPM specfiles
-Summary(pl):	RPM::Specfile - rozszerzenie Perla do tworzenia plikÛw .spec dla RPM-a
+Summary(pl.UTF-8):   RPM::Specfile - rozszerzenie Perla do tworzenia plik√≥w .spec dla RPM-a
 Name:		perl-RPM-Specfile
 Version:	1.51
 Release:	1
@@ -24,10 +24,10 @@ Simple module for creation of RPM Spec files. Used by cpanflute2 to
 turn CPAN tarballs into RPM modules. See the included script
 cpanflute2 for usage; documentation coming soon.
 
-%description -l pl
-Prosty modu≥ do tworzenia plikÛw .spec dla RPM-a. Jest uøywany przez
-cpanflute2 do zamiany paczek CPAN na modu≥y RPM. SposÛb uøycia moøna
-znaleºÊ w za≥±czonym skrypcie cpanflute2 - dokumentacja wkrÛtce.
+%description -l pl.UTF-8
+Prosty modu≈Ç do tworzenia plik√≥w .spec dla RPM-a. Jest u≈ºywany przez
+cpanflute2 do zamiany paczek CPAN na modu≈Çy RPM. Spos√≥b u≈ºycia mo≈ºna
+znale≈∫ƒá w za≈ÇƒÖczonym skrypcie cpanflute2 - dokumentacja wkr√≥tce.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
