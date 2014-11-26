@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	RPM
 %define		pnam	Specfile
+%include	/usr/lib/rpm/macros.perl
 Summary:	RPM::Specfile - Perl extension for creating RPM specfiles
 Summary(pl.UTF-8):	RPM::Specfile - rozszerzenie Perla do tworzenia plików .spec dla RPM-a
 Name:		perl-RPM-Specfile
@@ -14,6 +14,7 @@ License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	023b47c72581ac2190487b7ad0185bcf
+URL:		http://search.cpan.org/dist/RPM-Specfile/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
