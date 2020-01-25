@@ -4,7 +4,6 @@
 
 %define		pdir	RPM
 %define		pnam	Specfile
-%include	/usr/lib/rpm/macros.perl
 Summary:	RPM::Specfile - Perl extension for creating RPM specfiles
 Summary(pl.UTF-8):	RPM::Specfile - rozszerzenie Perla do tworzenia plików .spec dla RPM-a
 Name:		perl-RPM-Specfile
